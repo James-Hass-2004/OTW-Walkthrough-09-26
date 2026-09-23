@@ -26,6 +26,8 @@ bandit0 is our username port 2220 is how we get the 2220 so our final solution i
 
 bandit0@bandit.labs.overthewire.org -p2220
 
+It then will give you the password
+
 
 SOURCES: 
 https://en.wikipedia.org/wiki/Secure_Shell
