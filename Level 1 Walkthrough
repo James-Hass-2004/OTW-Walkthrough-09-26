@@ -1,1 +1,42 @@
+Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statute that might otherwise be infringing.
 
+Keywords for level 1
+
+1. SSH [Secure Shell Protocol]
+2. Port [Port — a 16-bit logical identifier (0–65535) that maps an incoming network packet to a specific process/socket on a Linux host. Pairs with an IP address to form a full socket address. Well-known ports (0–1023) are reserved for privileged services; higher ports are registered or ephemeral.
+3. POSIX compatibility layer / POSIX emulation layer (AKA  Unix-like environment) Compatibility layer — software that intercepts foreign API/syscalls, translates them into host OS calls, exposes a familiar interface (e.g., POSIX → Windows NT API), no hardware emulation, no guest OS, near-native performance.
+4. CAT / Concatment- To connect or link in a series of chains
+5. LS-  list the contents of a directory, displaying files and subdirectories. 
+6. / -  directory separator within file paths and as the symbol for the root directory of the unified file system.
+
+FROM NOW OWN WE WILL REFER TO THE POSIX AS "CONSOLE"
+
+Tip- As is stated in the over the wire webpage I CAN NOT STRESS ENOUGH you NEED !!! a seperate notes or docs to save your passwords because when you log out it's done that's it
+
+The challenge- "The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game."
+
+So we learned in level 0 how to access the console using the password you got in level 0 we are going to use the user login from now on so this one is
+
+ssh bandit1@bandit.labs.overthewire.org -p2220
+
+So our goal is to get into a file called "Read me" in the home directory here is what to do and then we will go step by step on what each thing does and how it works
+
+cat ./-
+
+If you want to do it in depth do cd which shows "current directory" then do "ls" which  list the contents of a directory, displaying files and subdirectories. then you will see the next line just shows "-" that is our file we need
+
+Explanation-  “cat” literally stands for “Concatenate”  It reads through the files contents and outputs them to the standard output. (the terminal)
+“.” the single dot is looking through the current directory
+
+“/” the slash is the path separator so when we use x command it starts it
+
+“-” this dash is the FILE we are looking for 
+
+So when we put them all together we are telling the console  cat ./- look through our current directory and begin the search and look for "-"
+
+This will get you your password for level 2
+
+
+SOURCES
+https://www.educative.io/answers/what-is-the-ls-command-in-linux
+https://ubuntu.com/tutorials/command-line-for-beginners
