@@ -1,0 +1,48 @@
+Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statute that might otherwise be infringing.
+
+Keywords for level 2
+
+make this alpabetically order 
+
+1. / — Directory separator within file paths and as the symbol for the root directory of the unified file system.
+2. CAT / Concatment — To connect or link in a series of chains.
+3. Double quotes (") — A shell quoting mechanism that groups characters into a single argument, preventing word splitting and glob expansion while still allowing variable expansion, command substitution, and backtick substitution.
+4. LS — List the contents of a directory, displaying files and subdirectories.
+5. POSIX compatibility layer / POSIX emulation layer (AKA Unix-like environment) — Compatibility layer: software that intercepts foreign API/syscalls, translates them into host OS calls, exposes a familiar interface (e.g., POSIX → Windows NT API), no hardware emulation, no guest OS, near-native performance.
+6. Port — A 16-bit logical identifier (0–65535) that maps an incoming network packet to a specific process/socket on a Linux host. Pairs with an IP address to form a full socket address. Well-known ports (0–1023) are reserved for privileged services; higher ports are registered or ephemeral.
+7. SSH [Secure Shell Protocol]
+8. -a (--all) — A flag for ls that includes all directory entries in the listing, including hidden files and directories (those whose names begin with a dot), as well as the special . and .. entries.
+
+
+FROM NOW OWN WE WILL REFER TO THE POSIX AS "CONSOLE"
+
+Tip- As is stated in the over the wire webpage I CAN NOT STRESS ENOUGH you NEED !!! a seperate notes or docs to save your passwords because when you log out it's done that's it
+
+The challenge- "The password for the next level is stored in a hidden file in the inhere directory."
+
+So we learned in level 0 how to access the console using the password you got in level 0 we are going to use the user login from now on so this one is
+
+ssh bandit3@bandit.labs.overthewire.org -p2220
+
+So our goal is to get into a file that is hidden in another directory called "inhere" directory
+
+cd inhere
+ls -a
+cat ...Hiding-From-You
+
+Explanation—
+
+"cd: literally stands for "current directory" so since we know it's in a directory called "inhere" we are going to that directory, which is called "inhere"
+
+ls-  lists the files and subdirectories, i.e. just a list of stuff
+
+-a is a flag that is included on our ls which is going to show us all files including hidden files and directories, as well as those that begin with a dot and . and .. entries.
+
+“cat” literally stands for “Concatenate” It reads through the file's contents and outputs them to the standard output. (the terminal)
+
+"... Hiding-From-You" is the file name, so that is what we are going to input.
+
+So, when we put them all together, we are telling the console cd inhere so that the directory we are in here is "inhere" then we are going to do ls -a which is going to find all files hidden ones as well that use . or .. or ... in their name, this is where we find the file called "...Hiding-From-You" so then we input the cat which is going to open the file and look in it, and we are asking it to open "...Hiding-From-You" and then when you input those commands you will get your answer.
+
+SOURCES
+https://www.simplified.guide/linux/file-folder-view-hidden
