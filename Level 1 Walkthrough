@@ -11,31 +11,30 @@ Keywords for level 1
 
 FROM NOW OWN WE WILL REFER TO THE POSIX AS "CONSOLE"
 
-Tip- As is stated in the over the wire webpage I CAN NOT STRESS ENOUGH you NEED !!! a seperate notes or docs to save your passwords because when you log out it's done that's it
+Tip — As is stated on the over-the-wire webpage, I CAN NOT STRESS ENOUGH you NEED !!! Separate notes or docs to save your passwords, because when you log out, it's done, that's it.
 
-The challenge- "The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game."
+The challenge — "The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game."
 
-So we learned in level 0 how to access the console using the password you got in level 0 we are going to use the user login from now on so this one is
+So, we learned in level 0 how to access the console using the password you got in level 0. We are going to use the user login from now on, so this one is
 
 ssh bandit1@bandit.labs.overthewire.org -p2220
 
-So our goal is to get into a file called "Read me" in the home directory here is what to do and then we will go step by step on what each thing does and how it works
+So our goal is to get into a file called "Read me" in the home directory. Here is what to do, and then we will go step by step on what each thing does and how it works.
 
 cat ./-
 
-If you want to do it in depth do cd which shows "current directory" then do "ls" which  list the contents of a directory, displaying files and subdirectories. then you will see the next line just shows "-" that is our file we need
+If you want to do it in depth, do cd which shows "current directory", then do "ls" which lists the contents of a directory, displaying files and subdirectories. Then you will see the next line just shows "-" that is the file we need.
 
-Explanation-  “cat” literally stands for “Concatenate”  It reads through the files contents and outputs them to the standard output. (the terminal)
-“.” the single dot is looking through the current directory
+Explanation: “cat” literally stands for “Concatenate”. It reads through the file's contents and outputs them to the standard output (the terminal).
+“.” the single dot is looking through the current directory.
 
-“/” the slash is the path separator so when we use x command it starts it
+“/” the slash is the path separator, so when we use x command it starts it
 
-“-” this dash is the FILE we are looking for 
+“-” This dash is the FILE we are looking for.
 
-So when we put them all together we are telling the console  cat ./- look through our current directory and begin the search and look for "-"
+So when we put them all together, we tell the console cat ./- look through our current directory and begin the search and look for "-"
 
-This will get you your password for level 2
-
+This will get you your password for level 2.
 
 SOURCES
 https://www.educative.io/answers/what-is-the-ls-command-in-linux
