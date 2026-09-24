@@ -2,9 +2,9 @@ Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is 
 
 Keywords for level 0 
 
-1. SSH [Secure Shell Protocol]
-2. Port [Port — a 16-bit logical identifier (0–65535) that maps an incoming network packet to a specific process/socket on a Linux host. Pairs with an IP address to form a full socket address. Well-known ports (0–1023) are reserved for privileged services; higher ports are registered or ephemeral.
-3. POSIX compatibility layer / POSIX emulation layer (AKA  Unix-like environment) Compatibility layer — software that intercepts foreign API/syscalls, translates them into host OS calls, exposes a familiar interface (e.g., POSIX → Windows NT API), no hardware emulation, no guest OS, near-native performance.
+1. POSIX compatibility layer / POSIX emulation layer (AKA Unix-like environment) — Compatibility layer: software that intercepts foreign API/syscalls, translates them into host OS calls, exposes a familiar interface (e.g., POSIX → Windows NT API), no hardware emulation, no guest OS, near-native performance.
+2. Port — A 16-bit logical identifier (0–65535) that maps an incoming network packet to a specific process/socket on a Linux host. Pairs with an IP address to form a full socket address. Well-known ports (0–1023) are reserved for privileged services; higher ports are registered or ephemeral.
+3. SSH [Secure Shell Protocol]
 
 The challenge- "The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1."
 
