@@ -2,12 +2,12 @@ Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is 
 
 Keywords for level 1
 
-1. SSH [Secure Shell Protocol]
-2. Port [Port — a 16-bit logical identifier (0–65535) that maps an incoming network packet to a specific process/socket on a Linux host. Pairs with an IP address to form a full socket address. Well-known ports (0–1023) are reserved for privileged services; higher ports are registered or ephemeral.
-3. POSIX compatibility layer / POSIX emulation layer (AKA  Unix-like environment) Compatibility layer — software that intercepts foreign API/syscalls, translates them into host OS calls, exposes a familiar interface (e.g., POSIX → Windows NT API), no hardware emulation, no guest OS, near-native performance.
-4. CAT / Concatment- To connect or link in a series of chains
-5. LS-  list the contents of a directory, displaying files and subdirectories. 
-6. / -  directory separator within file paths and as the symbol for the root directory of the unified file system.
+1. / — Directory separator within file paths and as the symbol for the root directory of the unified file system.
+2. CAT / Concatment — To connect or link in a series of chains.
+3. LS — List the contents of a directory, displaying files and subdirectories.
+4. POSIX compatibility layer / POSIX emulation layer (AKA Unix-like environment) — Compatibility layer: software that intercepts foreign API/syscalls, translates them into host OS calls, exposes a familiar interface (e.g., POSIX → Windows NT API), no hardware emulation, no guest OS, near-native performance.
+5. Port — A 16-bit logical identifier (0–65535) that maps an incoming network packet to a specific process/socket on a Linux host. Pairs with an IP address to form a full socket address. Well-known ports (0–1023) are reserved for privileged services; higher ports are registered or ephemeral.
+7. SSH [Secure Shell Protocol]
 
 FROM NOW OWN WE WILL REFER TO THE POSIX AS "CONSOLE"
 
