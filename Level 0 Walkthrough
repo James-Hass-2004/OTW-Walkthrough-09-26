@@ -8,26 +8,25 @@ Keywords for level 0
 
 The challenge- "The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1."
 
-First we need to get a a POSIX compatibility layer I used Cygwin there is tutorials online about downloading and setting it up
+First we need to get a POSIX compatibility layer. I used Cygwin. There are tutorials online about downloading and setting it up.
 
-Ok from now on we will refer to the POSIX compatability layer as "console"
+OK, from now on we will refer to the POSIX compatability layer as a "console"
 
-Once inside the console you are going to copy and paste "ssh bandit0@bandit.labs.overthewire.org -p2220"
+Once inside the console, you are going to copy and paste "ssh bandit0@bandit.labs.overthewire.org -p2220"
 
-How we get this
+How do we get this?
 
-We use ssh since this is our Secure Shell Protocol and bandit0@bandit.labs.overthewire.org -p2220 
+We use ssh since this is our Secure Shell Protocol and bandit0@bandit.labs.overthewire.org -p2220
 
-how we got "bandit0" is the username so if it was username "bandit8" it would be "bandit8@bandit.labs.overthewire.org -p2220
+How we got "bandit0" is the username, so if it was the username "bandit8", it would be "bandit8@bandit.labs.overthewire.org -p2220
 
-We get -p2220 from they stated "On port 2220" so -p is our port and 2220 is our port number so it is
+We get -p2220 from they stated, "On port 2220" so -p is our port and 2220 is our port number, so it is
 
 bandit0 is our username port 2220 is how we get the 2220 so our final solution is
 
 bandit0@bandit.labs.overthewire.org -p2220
 
-It then will give you the password
-
+It will then give you the password.
 
 SOURCES: 
 https://en.wikipedia.org/wiki/Secure_Shell
